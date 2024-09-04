@@ -1,0 +1,94 @@
+{
+  "@context": [
+    "https://geojson.org/geojson-ld/geojson-context.jsonld",
+    {
+      "@version": "1.1",
+      "wx": "https://api.weather.gov/ontology#",
+      "s": "https://schema.org/",
+      "geo": "http://www.opengis.net/ont/geosparql#",
+      "unit": "http://codes.wmo.int/common/unit/",
+      "@vocab": "https://api.weather.gov/ontology#",
+      "geometry": {
+        "@id": "s:GeoCoordinates",
+        "@type": "geo:wktLiteral"
+      },
+      "city": "s:addressLocality",
+      "state": "s:addressRegion",
+      "distance": {
+        "@id": "s:Distance",
+        "@type": "s:QuantitativeValue"
+      },
+      "bearing": {
+        "@type": "s:QuantitativeValue"
+      },
+      "value": {
+        "@id": "s:value"
+      },
+      "unitCode": {
+        "@id": "s:unitCode",
+        "@type": "@id"
+      },
+      "forecastOffice": {
+        "@type": "@id"
+      },
+      "forecastGridData": {
+        "@type": "@id"
+      },
+      "publicZone": {
+        "@type": "@id"
+      },
+      "county": {
+        "@type": "@id"
+      }
+    }
+  ],
+  "id": "https://api.weather.gov/points/34.0347,-78.2158",
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -78.215800000000002,
+      34.034700000000001
+    ]
+  },
+  "properties": {
+    "@id": "https://api.weather.gov/points/34.0347,-78.2158",
+    "@type": "wx:Point",
+    "cwa": "ILM",
+    "forecastOffice": "https://api.weather.gov/offices/ILM",
+    "gridId": "ILM",
+    "gridX": 80,
+    "gridY": 58,
+    "forecast": "https://api.weather.gov/gridpoints/ILM/80,58/forecast",
+    "forecastHourly": "https://api.weather.gov/gridpoints/ILM/80,58/forecast/hourly",
+    "forecastGridData": "https://api.weather.gov/gridpoints/ILM/80,58",
+    "observationStations": "https://api.weather.gov/gridpoints/ILM/80,58/stations",
+    "relativeLocation": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.147364899999999,
+          34.069924999999998
+        ]
+      },
+      "properties": {
+        "city": "Bolivia",
+        "state": "NC",
+        "distance": {
+          "unitCode": "wmoUnit:m",
+          "value": 7422.4071111884004
+        },
+        "bearing": {
+          "unitCode": "wmoUnit:degree_(angle)",
+          "value": 238
+        }
+      }
+    },
+    "forecastZone": "https://api.weather.gov/zones/forecast/NCZ109",
+    "county": "https://api.weather.gov/zones/county/NCC019",
+    "fireWeatherZone": "https://api.weather.gov/zones/fire/NCZ109",
+    "timeZone": "America/New_York",
+    "radarStation": "KLTX"
+  }
+}
